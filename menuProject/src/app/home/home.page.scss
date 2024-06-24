@@ -1,0 +1,163 @@
+
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+ion-toolbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  
+  min-width: 40px;
+  ion-title {
+    text-align: center;  /* Center the title */
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+}
+.search-bar-container {
+  padding: 10px;
+  display: flex; /* Flexbox kullanarak yan yana düzen */
+  align-items: center; /* İçerikleri dikey eksende ortala */
+}
+.search-bar-container ion-button {
+  vertical-align: middle;
+  --background: transparent; /* Butonun arka planını şeffaf yapar */
+  --background-hover: rgba(0, 0, 0, 0.1); /* Üzerine gelindiğinde arka plan rengi */
+  --background-focused: rgba(0, 0, 0, 0.1); /* Foküslendiğinde arka plan rengi */
+  --background-activated: rgba(0, 0, 0, 0.2); /* Aktifken arka plan rengi */
+  --border-radius: 50%; /* Buton kenarlarını yuvarlak yapar */
+  --border-style: none; /* Kenar stilini kaldırır */
+  --padding: 0 5px; /* İç dolguyu ayarlar */
+  --ripple-color: rgba(255, 255, 255, 0.1); /* Dokunma efekti rengi */
+}
+
+.search-bar-container ion-button ion-icon {
+  font-size: 24px; /* İkon boyutu */
+  color: #999; /* İkon rengi */
+}
+ion-searchbar {
+  border-radius: 20px; /* Kenar yuvarlaklığı */
+  flex: 1; /* Tüm mevcut alanı kapla */
+}
+
+.result-title {
+  padding: 10px 10px 0 10px;
+  font-size: 18px;
+}
+ion-content{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.message{
+  padding: 5px;
+  text-align: center;
+  width: 80%;
+  font-size: 14px;
+}
+
+ion-list {
+  padding: 0 10px; /* Liste elemanlarını kenarlardan ayır */
+}
+
+ion-card {
+  width: 100%;
+  .rating {
+    position: absolute; 
+    top: 8px; 
+    left: 8px; 
+    background: #B70014; 
+    color: white; 
+    padding: 5px 10px; 
+    font-size: 16px; 
+    border-radius: 8px;
+  }
+  ion-img{
+    object-fit: cover; /* Oranı korur ve çerçeveye sığacak şekilde kırpma yapar */
+    object-position:  center; /* Resmi merkezde odaklar */
+    height: 150px;
+    margin: 0 0;
+    width: 100%;
+  }
+
+  ion-card-title {
+    font-size: 18px; 
+    font-weight: bold;
+    width: 100%;
+  }
+  .left-column{  
+    position: relative; // Bu, içerisindeki pozisyonlandırılmış öğeler için bir referans noktası oluşturur.
+    display:  flex;
+    height: 100%;
+    width: 100%;
+  }
+  .right-column{
+    text-align: right;
+    font-size: 12px;
+
+  }
+
+  .info {
+    padding: 0px; 
+    display: grid; 
+    grid-template-columns: auto auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  p{
+    font-size: 12px; 
+
+  }
+  .distance {
+    position: absolute;
+    bottom: 0; // En altta olacak şekilde konumlandırır.
+    left: 0;  // Sol tarafta olacak şekilde konumlandırır.
+    width: 100%;  // Bu, distance div'inin tüm genişliği kaplamasını sağlar.
+  white-space: nowrap;  // Bu, içeriği tek satırda tutar ve satır kaymasını önler.
+}
+  .distance p {
+    font-weight: bold; // Kalın yapmak için
+    font-size: 12px; 
+  }
+  
+  .hours p{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    vertical-align: middle;
+    ion-icon {
+      margin-right: 5px;
+    }
+  }
+}
+
