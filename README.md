@@ -1,4 +1,4 @@
-# One Page App with Ionic/Angular
+# Restaurant Listing App with Ionic/Angular
 
 ## Project Description
 ![design](src/assets/design.png)]
