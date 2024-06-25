@@ -10,7 +10,7 @@
 ### Running the Project
 
 1. Make sure ionic is installed with npm.
-2. Then, you can run the project with this command:
+2. Then, you can run the project with this command in the project directory:
 ```bash
 flask run
 ```
